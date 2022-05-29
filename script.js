@@ -9,7 +9,7 @@ class Categoria {
     this.titulo = titulo,
     this.tarefa = tarefa
   }
-} 
+}
 
 class Tarefa {
   constructor(id, titulo, categoriaId){
@@ -24,16 +24,21 @@ let ListaTarefas = []
 
 ListaTarefas.push({id: 1, titulo: 'tarefa1', categoriaId: 1})
 
-let academia = new Categoria(1, 'Academia', [])
-
-ListaCategoria.push(academia)
-
-let teste = ''
-let teste2 = ''
-let teste3
-teste = ListaCategoria.filter((titulo) => titulo.titulo == 'Academia')
-teste2 = ListaCategoria.find((titulo) => titulo.titulo == 'Academia')
 
 
-console.log(teste)
-console.log(teste2)
+// let academia = new Categoria(1, 'Academia', [])
+
+// ListaCategoria.push(academia)
+
+// let teste = ''
+// let teste2 = ''
+// let teste3
+// teste = ListaCategoria.filter((titulo) => titulo.titulo == 'Academia')
+// teste2 = ListaCategoria.find((titulo) => titulo.titulo == 'Academia')
+// titleAlreadyExist = ListaCategoria.some((titulo) => titulo.titulo == 'Academia')
+
+// if ()
+
+
+// console.log(teste)
+// console.log(teste2.titulo)

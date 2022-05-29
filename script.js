@@ -37,3 +37,4 @@ function addTarefa(){
   item[0].tarefa.push(novaTarefa)
   console.log(item[0].tarefa)
 }
+console.log('alo')

@@ -24,8 +24,6 @@ function login() {
 
     }
 
-
-
 }
 
 $imgShowPassword.addEventListener('click', showAndHIdePassword)

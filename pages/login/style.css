@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@400;800&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+        
+    --nav-height: 6.9rem;
+
+    --primary-main: hsl(240, 67%, 58%);
+
+    --bottom-color:hsl(253, 57%, 45%);
+    --background-page: hsla(216, 7%, 14%, 1);
+    --primary-color: hsl(0, 0%, 25%);
+    --secondary-color: hsl(0, 0%, 38%);
+
+    --nav-color: #000000;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 62.5%;
+}
+
+/* ==== NAVIGATOR ============================================================== */
+
+
+nav {
+    height: 6.9rem;
+
+    color: #fff;
+    background: var(--nav-color);
+
+    padding-left: 2.8rem;
+    padding-right: 9.1rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-icon {
+    height: 5.2rem;
+    width: 5.2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+nav a {
+    color: #fff;
+
+    text-decoration: none;
+    font-size: 2.2rem;
+    cursor: pointer;
+
+}
+
+
+/* ====== LOGIN SECTION ============================================================= */
+
+
+.loginData {
+    width: 44rem;
+    height: 53.5rem;
+    border-radius: 2.5rem;
+    background: var(--primary-color);
+}
+
+.loginSection {
+    width: 100vw;
+    height: calc(100vh - var(--nav-height));
+
+    background: var(--background-page);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+
+}
+
+
+.loginData .ulDiv,
+.loginData p {
+    width: 35.2rem;
+    
+
+    position: relative;
+    left: 4.4rem;
+    top: 10.4rem;
+}
+
+.loginData ul {
+
+
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 3.8rem;
+
+}
+
+.loginData p{
+    margin-top: 1.5rem;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+}
+.loginData p a{
+    text-decoration: none;
+    color: var(--primary-main);
+}
+
+.imgHidePassword{
+    display: none;
+}
+
+.imgShowPassword{
+    display: flex;
+}
+
+.imgShowPassword, .imgHidePassword {
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 2;
+    right: 1.3rem;
+    top: 50%;
+
+    cursor: pointer;
+}
+
+.password, .username{
+    
+    box-sizing: border-box;
+    padding-inline: 2.5rem;
+    background: var(--secondary-color);
+    outline: none;
+
+}
+.password:focus, .username:focus {
+    border: .3rem solid var(--primary-main);
+}
+
+.password, .username, .login {
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #fff;
+
+    width: 35.2rem;
+    height: 5.3rem;
+
+    border-radius: 1rem;
+
+    border: 0;
+}
+.login {
+    background: var(--bottom-color);
+    cursor: pointer;
+}

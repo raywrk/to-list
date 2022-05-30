@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@400;800&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+        
+    --nav-height: 6.9rem;
+
+    --primary-main: hsl(240, 67%, 58%);
+    --primary-hover: hsl(240, 60%, 50%);
+    --bottom-color:hsl(253, 57%, 45%);
+
+    --secondary-main: hsl(0, 67%, 58%);
+    --secondary-hover: hsl(0, 60%, 50%);
+
+
+    --background-page: hsla(216, 7%, 14%, 1);
+    --primary-color: hsl(0, 0%, 25%);
+    --secondary-color: hsl(0, 0%, 38%);
+
+    --nav-color: #000000;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 62.5%;
+}
+
+/* ==== NAVIGATOR ============================================================== */
+
+
+nav {
+    height: 6.9rem;
+
+    color: #fff;
+    background: var(--nav-color);
+
+    padding-left: 2.8rem;
+    padding-right: 9.1rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-icon {
+    height: 5.2rem;
+    width: 5.2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+nav a {
+    color: #fff;
+
+    text-decoration: none;
+    font-size: 2.2rem;
+    cursor: pointer;
+
+}
+
+
+.alert {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+
+    width: 30rem;
+    height: 10rem;
+
+    background: var(--secondary-main);
+
+    border-radius: 1rem;
+
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    animation: alert 0.7;
+}
+
+@keyframes alert {
+    0%{
+        transform: translateY(100rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+} 
+
+.alert p {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    
+}
+
+
+
+.timeBar {
+    width: 100%;
+    height: 1rem;
+
+    background: var(--secondary-hover);
+
+    animation-duration: 3s;
+    animation-name: timeBar;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* border-end-start-radius: 1rem; */
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+@keyframes timeBar {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%; 
+    }
+} 
+
+
+
+
+
+/* ====== LOGIN SECTION ============================================================= */
+
+.loginSection {
+    width: 100vw;
+    height: calc(100vh - var(--nav-height));
+
+    background: var(--background-page);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+.loginData {
+    min-width: 44rem;
+
+    height: 70vh;
+    min-height: 43.8vh;
+
+    border-radius: 2.5rem;
+    background: var(--primary-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3.8rem;
+}
+
+
+.password, .username, .login {
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #fff;
+
+    width: 35.2rem;
+    height: 5.3rem;
+
+    border-radius: 1rem;
+
+    border: 0;
+}
+
+.password, .username{
+    
+    box-sizing: border-box;
+    padding-inline: 2.5rem;
+    background: var(--secondary-color);
+    outline: none;
+
+}
+
+.password:focus, .username:focus {
+    border: .3rem solid var(--primary-main);
+}
+
+
+.containerPassword{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--secondary-color);
+    border-radius: 1rem;
+    /* gap: 4rem; */
+    position: relative;
+}
+
+.imgHidePassword{
+    display: none;
+}
+
+.containerPassword  img{
+    position: absolute;
+    top: 50%;
+    right: 1.3rem;
+    transform: translateY(-50%);
+    
+    cursor: pointer;
+}
+
+.login {
+    background: var(--bottom-color);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.login:hover {
+    background: var(--primary-main);
+}
+
+.loginData p{ 
+    width: 35.5rem;
+
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+
+.loginData p a{
+    text-decoration: none;
+    color: var(--primary-main);
+}
+
+.loginData p a:hover {
+    color: var(--primary-hover);
+}
+
+
+
+
+
+
+
+
+

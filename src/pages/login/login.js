@@ -1,6 +1,10 @@
 const $password = document.querySelector('.password')
+const $username = document.querySelector('.username')
+const $login = document.querySelector('.login')
+
 const $imgShowPassword = document.querySelector('.imgShowPassword')
 const $imgHidePassword = document.querySelector('.imgHidePassword')
+
 
 $imgShowPassword.addEventListener('click', showAndHIdePassword)
 $imgHidePassword.addEventListener('click', showAndHIdePassword)

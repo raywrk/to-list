@@ -1,0 +1,30 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+        
+    --nav-height: 6.9rem;
+
+    --primary-main: hsl(240, 67%, 58%);
+    --primary-hover: hsl(240, 60%, 50%);
+    --bottom-color:hsl(253, 57%, 45%);
+
+    --secondary-main: hsl(0, 67%, 58%);
+    --secondary-hover: hsl(0, 60%, 50%);
+    --secondary-pressed: hsl(0, 57%, 30%);
+
+    
+    --background-page: hsla(216, 7%, 14%, 1);
+    --primary-color: hsl(0, 0%, 25%);
+    --secondary-color: hsl(0, 0%, 38%);
+
+    --nav-color: #000000;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 62.5%;
+}

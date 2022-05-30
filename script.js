@@ -5,19 +5,6 @@ const $button2 = document.querySelector('.btn2')
 
 $button.addEventListener('click', addCategoria)
 $button2.addEventListener('click', addTarefa)
-class Categoria {
-  constructor(id, titulo, []){
-    this.id = id,
-    this.titulo = titulo
-    this.tarefa = []
-  }
-} 
-class Tarefa {
-  constructor(id, titulo){
-    this.id = id,
-    this.titulo = titulo
-  }
-} 
 
 let ListaCategorias = [
 ]

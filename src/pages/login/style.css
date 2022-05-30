@@ -17,7 +17,7 @@
     --secondary-main: hsl(0, 67%, 58%);
     --secondary-hover: hsl(0, 60%, 50%);
 
-
+    
     --background-page: hsla(216, 7%, 14%, 1);
     --primary-color: hsl(0, 0%, 25%);
     --secondary-color: hsl(0, 0%, 38%);
@@ -28,18 +28,19 @@
     font-size: 62.5%;
 }
 
-/* ==== NAVIGATOR ============================================================== */
+ /*   
+    1vh = 9px 
+    1vw =7.5px  
+*/
 
+/* ==== NAVIGATOR ============================================================== */
 
 nav {
     height: 6.9rem;
-
     color: #fff;
     background: var(--nav-color);
-
     padding-left: 2.8rem;
     padding-right: 9.1rem;
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -60,32 +61,21 @@ nav {
     cursor: pointer;
 }
 
-
-
 nav a {
     color: #fff;
-
     text-decoration: none;
     font-size: 2.2rem;
     cursor: pointer;
-
 }
-
-
 .alert {
     position: absolute;
     top: 2rem;
     right: 2rem;
-
-
-    width: 30rem;
-    height: 10rem;
-
+    width: 40vw;
+    height: 11.1vh;
     background: var(--secondary-main);
-
-    border-radius: 1rem;
-
-    display: none;
+    border-radius: 1.1vh;
+    display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -104,29 +94,25 @@ nav a {
 } 
 
 .alert p {
+
     color: #fff;
     font-size: 1.4rem;
     font-weight: 500;
     
 }
 
-
-
 .timeBar {
     width: 100%;
-    height: 1rem;
-
+    height: 1.1vh;
     background: var(--secondary-hover);
-
     animation-duration: 3s;
     animation-name: timeBar;
-
     position: absolute;
     bottom: 0;
     left: 0;
     /* border-end-start-radius: 1rem; */
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1.1vh;
+    border-bottom-right-radius: 1.1vh;
 }
 
 @keyframes timeBar {
@@ -138,18 +124,12 @@ nav a {
     }
 } 
 
-
-
-
-
 /* ====== LOGIN SECTION ============================================================= */
 
 .loginSection {
     width: 100vw;
     height: calc(100vh - var(--nav-height));
-
     background: var(--background-page);
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,12 +139,9 @@ nav a {
 
 
 .loginData {
-    min-width: 44rem;
-
-    height: 70vh;
-    min-height: 43.8vh;
-
-    border-radius: 2.5rem;
+    width: 24vw;
+    height: 59.5vh;
+    border-radius: 2.7vh;
     background: var(--primary-color);
 
     display: flex;
@@ -174,17 +151,25 @@ nav a {
     gap: 3.8rem;
 }
 
+.containerInputs {
+    width: 80%;
+    height: 64%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 4.2vh;
+ 
+    position: relative;
+}
 
-.password, .username, .login {
+.password, .username, .login, .loginData p {
     font-weight: 400;
     font-size: 1.8rem;
     color: #fff;
-
-    width: 35.2rem;
-    height: 5.3rem;
-
-    border-radius: 1rem;
-
+    width: 100%;
+    height: 30%;
+    border-radius: 1.1vh;
     border: 0;
 }
 
@@ -201,27 +186,15 @@ nav a {
     border: .3rem solid var(--primary-main);
 }
 
-
-.containerPassword{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--secondary-color);
-    border-radius: 1rem;
-    /* gap: 4rem; */
-    position: relative;
-}
-
 .imgHidePassword{
     display: none;
 }
 
-.containerPassword  img{
+.containerInputs img{
     position: absolute;
-    top: 50%;
+    top: 36.5%;
     right: 1.3rem;
-    transform: translateY(-50%);
-    
+    transform: translateY(-50%);  
     cursor: pointer;
 }
 
@@ -229,18 +202,17 @@ nav a {
     background: var(--bottom-color);
     cursor: pointer;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    transition: 0.4s ease;
 }
 
 .login:hover {
     background: var(--primary-main);
 }
 
-.loginData p{ 
-    width: 35.5rem;
-
+.containerInputs p{ 
+    font-size: 1.6rem;
     font-weight: 400;
-    font-size: 18px;
     color: #fff;
 }
 
@@ -252,12 +224,4 @@ nav a {
 .loginData p a:hover {
     color: var(--primary-hover);
 }
-
-
-
-
-
-
-
-
 

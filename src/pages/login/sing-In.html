@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Sing In</title>
 </head>
 <body>
@@ -24,20 +25,24 @@
         </div>
         
         <div class="loginData">
-           
-            <input type="text" name="username" class="username" placeholder="username">
+
+            <div class="containerInputs">
+                <input type="text" name="username" class="username" placeholder="username">
         
-            <div class="containerPassword">
-                <input type="password" name="password" class="password" placeholder="password">
-            
-                    <img src="../../assets/hidepassword.svg" class="imgHidePassword" alt="">
-                    <img src="../../assets/showPassword.svg" class="imgShowPassword" alt=""> 
+                <!-- <div class="containerPassword"> -->
+                    <input type="password" name="password" class="password" placeholder="password">
+                
+                        <img src="../../assets/hidepassword.svg" class="imgHidePassword" alt="">
+                        <img src="../../assets/showPassword.svg" class="imgShowPassword" alt=""> 
+
+                <!-- </div> -->
+
+                <input type="button" value="Login" class="login">  
+
+                <p>Create an acount: <a href="#">sing up</a></p>
 
             </div>
-
-            <input type="button" value="Login" class="login">  
-            
-            <p>Create an acount: <a href="#">sing up</a></p>
+           
         </div>
     
      </section>

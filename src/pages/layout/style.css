@@ -3,6 +3,11 @@
 
 
 
+.li-1, .li-2, .li-3, .li-4 {
+  display: none;
+}
+
+
 :root{
   font-size: 62.5%;
 }
@@ -34,7 +39,8 @@ header{
   text-transform: uppercase;
   font-size: 2.4vh;
 }
-.menu-content-logo img{
+.menu-content-logo img,
+.list-items li img {
   height: 6.4vh;
   width: 3.2vw;
 }
@@ -48,8 +54,11 @@ header{
 .list-items li a{
   color: #fff
 }
-.list-items li a i{
-  font-size: 4.6vh;
-  color: hsl(240, 60%, 50%);
+
+
+.list-items li img{
+  height: 6.4vh;
+  width: 3.2vw;
+  
 }
 

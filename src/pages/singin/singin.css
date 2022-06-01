@@ -1,63 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@400;800&family=Roboto:wght@400;700&display=swap');
 @import url('../../global.css');
 @import url("../../components/alert/alert.css");
+@import url('../layout/style.css');
+
 
  /*   
     1vh = 9px 
     1vw =7.5px  
 */
 
-/* ==== NAVIGATOR ============================================================== */
+/* ====== LOGIN SECTION ============================================================= */
 
 body {
     overflow-x: hidden;
 }
 
-nav {
-    height: 6.9rem;
-    color: #fff;
-    background: var(--nav-color);
-    padding-left: 2.8rem;
-    padding-right: 9.1rem;
+.li-2{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+} 
+
+.li-1 {
+    display: none;
 }
-
-.nav-icon {
-    height: 5.2rem;
-    width: 5.2rem;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.6rem;
-    font-size: 2.2rem;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 2.2rem;
-    cursor: pointer;
-}
-
-nav a:hover {
-    filter: brightness(0.8);
-}
-
-/* ====== LOGIN SECTION ============================================================= */
 
 .loginSection {
     width: 100vw;
     height: calc(100vh - var(--nav-height));
-    background: var(--background-page);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,7 +44,6 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 3.8rem;
 }
 
 .containerInputs {
@@ -91,55 +58,62 @@ nav a:hover {
     position: relative;
 }
 
-.password, .username, .login, .loginData p {
+.password, .username, .singin, .singup, .loginData p {
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 2vh;
     color: #fff;
     width: 100%;
-    height: 30%;
+    height: 5.9vh;
     border-radius: 1.1vh;
     border: 0;
+}
+
+.singin, .singup {
+outline: none;
 }
 
 .password, .username{
     
     box-sizing: border-box;
-    padding-inline: 2.5rem;
+    padding-inline: 2.7vh;
     background: var(--secondary-color);
     outline: none;
 
 }
 
 .password:focus, .username:focus {
-    border: .3rem solid var(--primary-main);
+    border: 0.33vh solid var(--primary-main);
 }
 
 .imgHidePassword{
-    display: none;
+    display: flex;
 }
 
-.containerInputs img{
+.containerInputs img{   
+    width: 2.6vh;
+    height: 2.6vh;
+
     position: absolute;
-    top: 36.5%;
-    right: 1.3rem;
+    top: 34.5%;
+    right: 1.4vh;
     transform: translateY(-50%);  
     cursor: pointer;
 }
 
-.login {
+.singin, .singup{
     background: var(--bottom-color);
     cursor: pointer;
     font-weight: 500;
-    font-size: 1.6rem;
+    font-size: 2vh;
     transition: 0.4s ease;
 }
 
-.login:hover {
+.singin:hover, .singup:hover {
     background: var(--primary-main);
 }
 
 .containerInputs p{ 
-    font-size: 1.6rem;
+    font-size: 2vh;
     font-weight: 400;
     color: #fff;
 }

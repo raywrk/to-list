@@ -1,0 +1,41 @@
+@import url('../singin/singin.css');
+
+
+.li-1 {
+    display: flex;
+}
+
+.li-2 {
+    display: none;
+}
+
+.containerInputs {
+    gap: 2.7vh;
+}
+
+
+.email {
+    box-sizing: border-box;
+    padding-inline: 2.7vh;
+    background: var(--secondary-color);
+    outline: none;
+
+    font-weight: 400;
+    font-size: 2vh;
+    color: #fff;
+    width: 100%;
+    height: 5.9vh;
+    border-radius: 1.1vh;
+    border: 0;
+}
+
+.email:focus {
+    border: 0.33vh solid var(--primary-main);
+
+}
+
+
+.containerInputs img  {
+    top: 50%;
+}
+

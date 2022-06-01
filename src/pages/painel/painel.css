@@ -50,6 +50,14 @@
   align-items: center;
   gap: 1.6vh;
   border-radius: 2.7vh;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.categorias-cards:hover{
+  transform: scale(0.95);
+  transition: 0.5s ease;
+  background-color: #303268;
 }
 
 .categorias-cards p{

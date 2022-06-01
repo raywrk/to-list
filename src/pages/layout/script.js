@@ -19,7 +19,9 @@ const $categoriaTitle = document.querySelector('.categoriaTitle')
 const $categoriaDescricao = document.querySelector('.categoriaDescricao')
 const $addCategory = document.querySelector('.salvar')
 const $renderCategoryItens = document.querySelector('.categorias-cards-container')
+
 const CategoryArray = JSON.parse(localStorage.getItem('ListCategorys')) ?? []
+
 RenderCategory()
 
 if($selectIcon || $selectColorIcon || $addCategory){

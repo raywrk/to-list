@@ -1,3 +1,6 @@
+import { Categoria } from "./src/models/category.js"
+import { Tarefa } from "./src/models/task.js"
+
 const $categoria = document.querySelector('.categoria')
 const $tarefa = document.querySelector('.tarefa')
 const $button = document.querySelector('.btn')
@@ -6,8 +9,7 @@ const $button2 = document.querySelector('.btn2')
 $button.addEventListener('click', addCategoria)
 $button2.addEventListener('click', addTarefa)
 
-let ListaCategorias = [
-]
+let ListaCategorias = []
 
 function addCategoria(){
   let id = Object.keys(ListaCategorias).length + 1

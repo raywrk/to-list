@@ -1,14 +1,10 @@
 
-
-
-
 .alert {
     position: absolute;
     top: 2rem;
     right: 2rem;
     width: 24vw;
     height: 11.1vh;
-    background: var(--secondary-main);
     border-radius: 1.1vh;
     filter: brightness(1);
 
@@ -22,8 +18,8 @@
 
 @keyframes alert {
     0%{
-        transform: translateX(100rem);
-        opacity: 0;
+        transform: translateX(50rem);
+        opacity: 1;
     }
     25%{
         transform: translateX(0rem);
@@ -54,7 +50,7 @@
 .timeBar {
     width: 100%;
     height: 13%;
-    background: var(--secondary-hover);
+    background: var();
     filter: brightness(0.8);
     animation-duration: 2.5s;
     animation-name: timeBar;

@@ -1,13 +1,14 @@
 
-export const alert = `
+export const alert = (p, background, backgrounTimeBar) => { 
+    return `
+        <div class="alert" style="background: ${background};">
+        <p>${p}</p>
 
-        <div class="alert">
-            <p>Compos obrigatórios</p>
-            <div class="timeBar"></div>
+            <div class="timeBar" style="background: ${backgrounTimeBar};" ></div>
         </div>
 
 `
-
+}
 
 
 

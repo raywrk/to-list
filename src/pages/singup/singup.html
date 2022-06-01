@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./singup.css">
+    <title>Sing Up</title>
+</head>
+<body>
+        
+    <header>
+        <div class="menu-content">
+            <div class="menu-content-logo">
+              <img src="../../assets/nav-icon.svg" alt="Icone de checkBox marcado" class="nav-icon">
+              <h3 class="menu-content-logo-text">To list</h3>
+            </div>
+            <nav class="header-menu">
+                <ul class="list-items">
+                    <li class="li-1"><a href="../singin/singin.html">Sign in</a></li>
+                    <li class="li-2"><a href="#">Sign up</a></li>
+                    <li class="li-3"><a href="#">Dashboard</a></li>
+                    <li class="li-4"><a href="#">Painel</a></li>
+                    <li class="li-5"><img src="../../assets/person-circle.svg" alt="Person circle"></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="loginSection">
+
+        <div class="componentAlert"></div>
+        
+        <div class="loginData">
+            <div class="containerInputs">
+                    <input type="email" class="email" placeholder="email@gmail.com" required>
+
+                    <input type="text" name="username" class="username" placeholder="username" required>
+        
+                <!-- <div class="containerPassword"> -->
+                    <input type="password" name="password" class="password" placeholder="password">
+                
+                    <img src="../../assets/hidepassword.svg" class="imgHidePassword"  alt="imagem de um olho para esconder a senha">
+                    <img src="../../assets/showPassword.svg" class="imgShowPassword"  alt="imagem de um olho para mostrar a senha"> 
+
+                <!-- </div> -->
+
+                <input type="button" onclick="" href="../layout/index.html" value="Sing up" class="singup">  
+
+                <p>You already have an account? <a href="../singin/singin.html">sing in</a></p>
+
+            </div>
+        </div>
+    
+     </section>
+
+     <script src="../../components/alert/alert.js" type="module"></script>
+    <script src="./singup.js" type="module"></script>
+</body>
+</html>

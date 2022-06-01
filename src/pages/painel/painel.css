@@ -1,3 +1,5 @@
+@import url('../../global.css');
+
 
 .container{
   max-width: 55vw;
@@ -7,13 +9,22 @@
 .categorias-add{
   margin-top: 8vh;
   margin-bottom: 6vh;
+  display: flex;
+  align-items: center;
 }
 
 .categorias-add img{
   height: 6.4vh;
   width: 3.2vw;
+  cursor: pointer;
 }
-
+.categorias-add p{
+  margin-left: 2vh;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #fff;
+  font-size: 2vh;
+}
 .categorias-cards-container{
   max-width: 100%;
   margin: auto;
@@ -46,3 +57,162 @@
   color: #fff;
   text-transform: uppercase;
 }
+
+/* MODAL CSS PAINEL */
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 20vh; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  height: 62vh;
+  width: 20vw;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  background-color: var(--color-modal-backgroud);
+  border-radius: 2.7vh;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: var(--primary-main);
+  float: right;
+  font-size: 2.5vh;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--button-color) ;
+  text-decoration: none;
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: 0.3s ease;
+}
+
+.modal-header {
+  padding: 1vh 1.5vw;
+  color: white;
+}
+
+.modal-body p {
+  color: #fff;
+  font-size: 1.6vh;
+  font-weight: 300;
+}
+
+.modal-body {
+  width: 100%;
+  padding-left: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6vh;
+  justify-content: center;
+ 
+}
+
+.modal-body input, select, textarea{
+  background-color: var(--secondary-color);
+  color: #fff;
+  width: 100%;
+  height: 5.6vh;
+  width: 17vw;
+  border-radius: 1.1vh;
+  border: 0;
+  align-items: center; 
+  padding-top: 0.1vh;
+  padding-left: 0.5vw;
+  padding-right: 0.9vw;
+  font-size: 1.6vh;
+  font-weight: 300;
+  resize:none;
+}
+
+.modal-body textarea{
+  height: 10.6vh;
+}
+
+.modal-body select:focus , input:focus, textarea:focus{
+  outline: none;
+  border: 1px solid var(--primary-main);
+}
+
+
+.modal-body .salvar{
+  background: var(--primary-main);
+  cursor: pointer;
+}
+
+.modal-body .salvar:hover{
+  filter: brightness(0.75);
+  transition: 0.5s ease;
+}
+
+.modal-body-icon{
+  display: flex;
+  gap: 1vw;
+}
+
+.modal-body-icon select{
+  height: 5.6vh;
+  width: 8vw;
+  padding-right: 0.9vw;
+}
+
+.modal-body-icon p{
+  height: 4.2vh;
+  width: 8vw;
+  padding-right: 0.9vw;
+}
+
+.modal-body-img{
+  border-radius: 1.1vh;
+  height: 10vh;
+  width: 8vw;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.modal-body-img img{
+
+  height: 7vh;
+  width: 3.5vw;
+
+}
+
+
+
+

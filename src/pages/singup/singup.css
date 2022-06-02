@@ -35,7 +35,13 @@
 }
 
 
-.containerInputs img  {
+.imgHidePassword1, .imgShowPassword1 {
     top: 50%;
+    width: 2.6vh;
+    height: 2.6vh;
+    position: absolute;
+    right: 1.4vh;
+    transform: translateY(-50%);  
+    cursor: pointer;
 }
 

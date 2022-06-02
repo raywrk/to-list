@@ -1,9 +1,25 @@
 @import url('../painel/painel.css');
 @import url('../../global.css');
+@import url('../singin/singin.css');
+@import url('../singup/singup.css');
 
+.li-1 {
+  display: flex;
+}
 
+.li-2 {
+  display: none;
+}
 
-.li-1, .li-2, .li-3, .li-4 {
+.li-3 {
+  display: none;
+}
+
+.li-4{
+  display: none;
+}
+
+.li-5{
   display: none;
 }
 

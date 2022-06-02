@@ -15,16 +15,16 @@ body {
     overflow-x: hidden;
 }
 
-.li-2{
+/* .li-2{
     display: flex;
 } 
 
 .li-1 {
     display: none;
-}
+} */
 
 .loginSection {
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - var(--nav-height));
     display: flex;
     align-items: center;
@@ -89,19 +89,18 @@ outline: none;
     display: flex;
 }
 
-.containerInputs img{   
+.imgHidePassword, .imgShowPassword{   
     width: 2.6vh;
     height: 2.6vh;
-
     position: absolute;
-    top: 34.5%;
+    top: 30%;
     right: 1.4vh;
     transform: translateY(-50%);  
     cursor: pointer;
 }
 
 .singin, .singup{
-    background: var(--bottom-color);
+    background: var(--button-color);
     cursor: pointer;
     font-weight: 500;
     font-size: 2vh;

@@ -1,4 +1,4 @@
-export const painelComponent = () => {
+const painelComponent = () => {
   return `
 <section class="container"> 
 
@@ -56,3 +56,5 @@ export const painelComponent = () => {
 
 `
 }
+
+export { painelComponent } 

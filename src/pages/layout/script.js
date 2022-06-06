@@ -185,7 +185,6 @@ function nav4(){
   const $renderIcon = document.querySelector('.modal-body-img')
   const $selectIcon = document.querySelector('.iconSelect')
   const $selectColorIcon = document.querySelector('.iconColorSelect')
-  const $valueBox = document.querySelector('.categorias-cards-span')
 
   // Inputs do Modal
   const $categoriaTitle = document.querySelector('.categoriaTitle')
@@ -201,7 +200,6 @@ function nav4(){
     $selectIcon.addEventListener('change', iconChange)
     $selectColorIcon.addEventListener('change', iconChange)
     $addCategory.addEventListener('click', addCategory)
-    $valueBox.addEventListener('click', openList)
   }
 
 
@@ -239,7 +237,8 @@ function nav4(){
     const created_at = formatDate(new Date())
     const status = true
     const task = []
-    let novaCategoria = new Categoria(id, title, icon, description, created_at, status, task)
+    const color = $selectColorIcon.value
+    let novaCategoria = new Categoria(id, title, icon, description, created_at, status, task, color)
     CategoryArray.push(novaCategoria)
     localStorage.setItem('ListCategorys', JSON.stringify(CategoryArray));
     RenderCategory()
@@ -255,19 +254,24 @@ function nav4(){
     
     CategoryArray.forEach((element) => { 
       categoryItens += `
-      <div class="categorias-cards">
+      <div onclick="openList(${element.id})"class="categorias-cards">
         <img src="${element.icon}" alt="">
         <p>${element.title}</p>
-        <span class="categorias-cards-span">${element.id}</span>
       </div>
       `
       $renderCategoryItens.innerHTML = categoryItens
     })
   }
 
-  function openList(){
-    console.log($valueBox.value)
+
+
+  
+  function openList(id){
+    console.log(`open ${id}`)
   }
+
+  window.openList = openList
+
 }
 
 

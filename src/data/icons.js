@@ -1,4 +1,4 @@
-export const icons = [
+const icons = [
   {name: 'casa-azul', src:'../../assets/icons/casa-azul.svg'},
   {name: 'casa-rosa', src:'../../assets/icons/casa-rosa.svg'},
   {name: 'casa-roxo', src:'../../assets/icons/casa-roxo.svg'},
@@ -16,3 +16,12 @@ export const icons = [
   {name: 'passeio-roxo', src:'../../assets/icons/passeio-roxo.svg'},
   {name: 'passeio-vermelho', src:'../../assets/icons/passeio-vermelho.svg'},
 ]
+
+const colors = [
+  {color: 'azul', hexa: '#2CB3FF'},
+  {color: 'rosa', hexa: '#C160D9'},
+  {color: 'vermelho', hexa: '#CC3333'},
+  {color: 'roxo', hexa: '#4C4DDC'},
+]
+
+export { icons, colors }

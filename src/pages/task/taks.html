@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./task.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <div class="menu-content">
+            <div class="menu-content-logo">
+              <img src="../../assets/nav-icon.svg" alt="Icone de checkBox marcado" class="nav-icon">
+              <h3 class="menu-content-logo-text">To list</h3>
+            </div>
+            <nav class="header-menu">
+                <ul class="list-items">
+                    <li class="li-1"><a href="#">Sign in</a></li>
+                    <li class="li-2"><a href="#">Sign up</a></li>
+                    <li class="li-3"><a href="#">Dashboard</a></li>
+                    <li class="li-4"><a href="#">Painel</a></li>
+                    <li class="li-5"><img src="../../assets/person-circle.svg" alt="Person circle"></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    
+    <div class="container">
+
+    <section class="taks-list-section">
+        <div class="componentAlert"></div>
+
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <p>Nome da Tarefa</p>
+                    <input class="categoriaTitle" type="text">
+                    <div class="checkTime">
+                        <input type="checkbox" name="" id="">
+                        <p>Icone da Categoria</p>
+                    </div>
+                    <input type="datetime-local" name="" class="dataEhora">
+                    <input type="button" value="Salvar" class="salvar">  
+                </div>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="categorias-cards">
+                <img src="../../assets/map_gym.svg" alt="">
+                <p>Academia</p>
+            </div>     
+            <textarea class="categoriaDescricao" type="text"></textarea>
+            <img class="imgAddActivity" src="../../assets/plus.svg" alt="">
+        </div>
+        <div class="activitysContainer">
+        </div>
+    </section>
+
+    </div>
+    <script src="./taksComponent.js" type="module"></script>
+
+</body>
+</html>

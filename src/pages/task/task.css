@@ -1,0 +1,207 @@
+@import url('../layout/style.css');
+@import url('../painel/painel.css');
+@import url('../../global.css');
+@import url('../../components/scrollBar/scroll.css');
+@import url('../../components/alert/alert.css');
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 3.3vh;
+    margin-block: 4.5vh;
+}
+
+.categorias-cards img {
+    height: 10vh;
+    width: 5vw;
+  }
+
+.categoriaDescricao {
+    box-sizing: border-box;
+    padding: 1vh;
+    width: 50vw;
+    height: 22vh;
+    border-radius: 2.7vh;
+    background-color: transparent;
+    border: 0.1vh solid var(--secondary-color);
+}
+.header .imgAddActivity {
+    width: 7.2vw;
+    height: 7.2vh;
+    cursor: pointer;
+    transition: .3s;
+}
+.header img:hover{
+    filter: brightness(1.2);
+}
+
+
+.activity {
+    box-sizing: border-box;
+    padding-left: 1.1vh;
+    
+    /* width: 100%; */
+    padding-block: 1.7vh;
+    margin-bottom: 2.5vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.4vh;
+    border-radius: 1.7vh;
+
+    background: var(--secondary-color);
+}
+
+.activity:hover {
+    background-color: var(--quaternary-red);
+}
+
+.activity:hover .divLixeira{
+    display: flex;
+}
+
+.inputTitle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.4vh;
+    margin-right: auto;
+    word-break: break-all;
+    max-width: 62vh;
+}
+
+.checkbox {
+    
+width: 3.5vh;
+height: 3.6vh;
+}
+.checkbox:before {
+content: "";
+display: block;
+position: relative;
+width: 3.1vh;
+height: 3vh;
+border-radius: .6vh;
+
+
+background-color: var(--secondary-color);
+filter: brightness(.9);
+
+border: 0.4vh solid #4C4DDC;
+right: 3%;
+}
+
+.checkbox:checked:after {
+    content: "";
+    display: block;
+    width: 0.8vh;
+    height: 1.7vh;
+    border: solid #4C4DDC;
+    filter: brightness(.9);
+    border-width: 0 0.54vh 0.54vh 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: relative;
+    bottom: 90%;
+    left: 42%;
+}
+ .checkbox:checked ~ p {
+    text-decoration: line-through;
+}
+  
+
+.activity p {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2vh;
+
+}
+
+.taskFinishTime{
+    margin-right: 2.1vh;
+
+    font-weight: 400;
+    font-size: 2vh;
+    color: #D9D9D9;
+}
+
+.divLixeira {
+    margin-right: 2.1vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding-right: .2vh;
+    width: 6.1vh;
+    height: 6.1vh;
+   background: var(--tertiary-red); 
+   cursor: pointer;
+
+}
+
+.lixeira {
+    width: 3.8vh;
+    height: 3.8vh;
+}
+
+
+/* ===== MODAL ============================================================== */
+
+.modal {
+    display: none;
+}
+.checkTime {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.1vh;
+}
+input[type=checkbox] {
+    width: 2.8vh;
+}
+
+
+.checkTime input[type=checkbox]:before {
+    content: "";
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    width: 3vh;
+    height: 3vh;
+    border-radius: .6vh;
+    
+    
+    background-color: hsl(216, 7%, 14%, 1);
+    filter: brightness(.9);
+    
+    border: 0.4vh solid #4C4DDC;
+    right: 3%;
+    top: 23%;
+}
+
+.checkTime input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 0.4vh;
+    height: 1vh;
+    border: solid #4C4DDC;
+    filter: brightness(.9);
+    border-width: 0 0.48vh 0.48vh 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: relative;
+    bottom: 21%;
+    left: 35%;
+}
+.salvar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

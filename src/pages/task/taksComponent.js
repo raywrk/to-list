@@ -12,38 +12,41 @@ const $taskFinishTime = document.querySelector('.taskFinishTime')
 const $activitysContainer = document.querySelector('.activitysContainer')
 const $categoriaTitle = document.querySelector('.categoriaTitle')
 const $componentAlert = document.querySelector('.componentAlert')
-
-
-
+const $checkBox = document.querySelector('.checkboxDate')
 
 $imgAddActivity.addEventListener('click', () => $modal.style.display = 'flex')
 $span.addEventListener('click', () => $modal.style.display = 'none')
 
+const categoryLS = JSON.parse(localStorage.getItem('ListCategorys')) ?? []
+const filtro = categoryLS.find(category => category.id == 1)
+const categoryTask = filtro.task ?? []
+
+$checkBox.addEventListener('click', desabilitar)
+
 renderTask()
 
-    
+ function desabilitar(event){
 
+    if(event.target.checked == true){
+      $dataEhora.style.visibility = 'visible'
+   }else{
+      $dataEhora.style.visibility = 'hidden'
+   }
 
-
+}
 
     function addTask()  {
         const dateClient = String($dataEhora.value)
-        const id = Object.keys(localStorageTask).length + 1
+        const id = Object.keys(filtro.task).length + 1
         const taskTitle = `${$categoriaTitle.value}`
-        const categoryId = 2
-        const tarefaArray = new Tarefa(id, taskTitle, categoryId, dateClient, true)
-        return tarefaArray
+        const tarefaArray = new Tarefa(id, taskTitle, dateClient, true)
+        filtro.task.push(tarefaArray)
+        localStorage.setItem('ListCategorys', JSON.stringify(categoryLS));
     }
 
-    
-    function taskLocalstorage(newTask) {
-        
-    }
-        
-    
-    function renderTask(){
-        let task = ``
-        respectiveTask.forEach(element => {
+     function renderTask(){
+        let task = ''
+        categoryTask.forEach(element => {
             task += `
             <div class="activity">
                 <div class="inputTitle">
@@ -57,11 +60,9 @@ renderTask()
             </div>
             `
             $activitysContainer.innerHTML = task
-        }); 
+        });
     }
-        
-    
-   
+
     function successAlert() {
         if ( $categoriaTitle.value == ''){
             $componentAlert.innerHTML = alert('Dê um titulo para sua atividade', '#dc4c4c', '#cc3333')
@@ -70,9 +71,8 @@ renderTask()
         }, 4000)
         $componentAlert.style.display = 'flex'
         
-        
         } else {
-            taskLocalstorage(addTask())
+            addTask()
             renderTask()
            
             $componentAlert.innerHTML = alert('Tarefa criada com sucesso', '#61bd4f', '#116900')
@@ -90,11 +90,5 @@ renderTask()
     successAlert()
     })
 
-
-
-
-    // $activity.addEventListener('click', (id) => {
-    //     console.log(`Elemento ${id} foi clicado`);
-    //   })
 
       

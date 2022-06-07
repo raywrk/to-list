@@ -16,6 +16,7 @@
     --primary-main: rgb(76, 76, 220);
     --primary-hover: hsl(240, 60%, 50%);
     --button-color:hsl(253, 57%, 45%);
+    --quaternary-red: hsl(0, 25%, 30%);
 
     --secondary-main: hsl(0, 67%, 58%);
     --secondary-hover: hsl(0, 60%, 50%);
@@ -24,7 +25,8 @@
     --background-page: hsla(216, 7%, 14%, 1);
     --primary-color: hsl(0, 0%, 25%);
     --secondary-color: hsl(0, 0%, 38%);
-
+    --tertiary-red: hsl(0, 60%, 50%);
+    
     --color-modal-backgroud: #202225;
   
     --nav-color: #000000;

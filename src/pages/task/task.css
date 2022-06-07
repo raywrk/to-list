@@ -13,6 +13,9 @@
     margin-block: 4.5vh;
 }
 
+.dataEhora{
+    visibility: hidden;
+}
 .categorias-cards img {
     height: 10vh;
     width: 5vw;
@@ -21,7 +24,7 @@
 .categoriaDescricao {
     box-sizing: border-box;
     padding: 1vh;
-    width: 50vw;
+    width: 34vw;
     height: 22vh;
     border-radius: 2.7vh;
     background-color: transparent;
@@ -51,11 +54,13 @@
     justify-content: flex-start;
     gap: 2.4vh;
     border-radius: 1.7vh;
-
     background: var(--secondary-color);
+    transition: 0.5s ease-in-out;
 }
 
 .activity:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.01);
     background-color: var(--quaternary-red);
 }
 
@@ -74,24 +79,25 @@
 }
 
 .checkbox {
-    
-width: 3.5vh;
-height: 3.6vh;
+
+    width: 3.5vh;
+    height: 3.6vh;
+
 }
 .checkbox:before {
-content: "";
-display: block;
-position: relative;
-width: 3.1vh;
-height: 3vh;
-border-radius: .6vh;
+    content: "";
+    display: block;
+    position: relative;
+    width: 3.1vh;
+    height: 3vh;
+    border-radius: .6vh;
 
+    background-color: var(--secondary-color);
+    filter: brightness(.9);
 
-background-color: var(--secondary-color);
-filter: brightness(.9);
-
-border: 0.4vh solid #4C4DDC;
-right: 3%;
+    border: 0.4vh solid #4C4DDC;
+    right: 3%;
+    cursor: pointer;
 }
 
 .checkbox:checked:after {
@@ -119,7 +125,6 @@ right: 3%;
     color: #fff;
     font-weight: 500;
     font-size: 2vh;
-
 }
 
 .taskFinishTime{
@@ -201,6 +206,7 @@ input[type=checkbox] {
     left: 35%;
 }
 .salvar {
+    margin-top: 24vh;
     display: flex;
     align-items: center;
     justify-content: center;
